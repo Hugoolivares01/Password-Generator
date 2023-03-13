@@ -6,30 +6,28 @@ generateBtn.addEventListener("click", writePassword);
 // when the generateBtn is click it needs to run the writePassword function
 
 function writePassword() {
-
   var Answer = Questions(); 
   // depending on whether true or false is returned we can put the stored value into 
   // another function to give us an each output 
-
+  var passwordText = document.querySelector("#password");
   if (Answer) {  
     // if the stored value is true then the below actions will run
   var password = generatePassword();
-
-  var passwordText = document.querySelector("#password");
-
+  //password
   passwordText.value = password;
-  
+  // password
+
+  }
+  else {
+    passwordText.value = "";
+    // if my value from the questions fuction is false while the alert will pop up it will also clear the text on the screen 
   }
 
 
 
 }
-
-var characterLength = 8;
-// length of the password that will be generated 
 var choice = []
 // an array that can be used as a substitute for the other arrays 
-
 var specialchar = ["!", "@", "#", "$", "%", "^", "&", "*", "?", "(", ")",]
 var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
   "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
@@ -42,11 +40,23 @@ var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 
 
 function generatePassword() {
-  var password = "";
+  var InvisiblePassword = "";
+  // makes the initial start of the password blank
   for (let i = 0; i < characterLength; i++) {
+    // this will keep loooping until it reaches the desired number that was 
+    // choosen by the user
     var x = Math.floor(Math.random() * choice.length)
-    
+    // varible x is going to be a the length of the choice array depending on 
+    // what was choosen then it will be mutiplied by a random number from 0-1
+    // that number will then be floored to the nearest interger that is smaller or equal to the decimaled number 
+    InvisiblePassword = InvisiblePassword + choice[x];
+    // this will choose add the random number choosen and add it to password and that 
+    // new value will be stored into password
+  
   }
+  return InvisiblePassword;
+  // will give back whatever the output from the function was back up to var password = generatePassword function
+  
 }
 
 function Questions() {
