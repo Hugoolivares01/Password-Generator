@@ -1,31 +1,24 @@
 # Password-Generator
-# Personal Project Portfolio
+
 ## Description 
-- this project was made to be an insight for my future employers so that they could see some of my more important projects that ive done while also giving them a bit of a background 
-description of myself and giving them a way to contact me. all of my projects opens up a server from where they can see my work.
--This project mostly ingrained my information i knew even more into my head but the thing i did learn was that there are ways to do most of my work easier towards the end of my work and would end up making my code shorter and cleaner for example the shrink and grow properties would have been easier.
-The biggest single issue i learned was making a tint over the element. 
 
 ## Installation 
-1. To get this project you need to follow this link to open up find the repository for this specific project (https://github.com/Hugoolivares01/Personalized-web-design)
+1. To get this project you need to follow this link to open up find the repository for this specific project (https://github.com/Hugoolivares01/Password-Generator)
 2. then you need to copy the ssh key
 3. Make an area for this folder to go i would personally suggest a folder for itself but place it where you prefer.
 4. clone this project into the folder and you are done.
 
 ## Usage
-http://127.0.0.1:5501/index.html
-![alt text](assets/images/screenshot%201.png)
-  
-    hovering over and clicking this image will 
-![alt text](assets/images/screenshot2.png)
 
-    send you to my other project that ive done in this example being my 
-    webpage code update.
-![alt text](assets/images/screenshot3.png)
+![alt text](assets/images/sh1.png)
 
-    going down to the links at the bottom of the page will give options ways to reach me for example clicking the twitter link
-![alt text](assets/images/screenshot4.png)
-    will bring you to my personal twitter. 
+![alt text](assets/images/sh2.png)
+
+![alt text](assets/images/sh3.png)
+
+
+![alt text](assets/images/sh4.png)
+
 
 ## Credits
 - Chat gpt (https://chat.openai.com/chat): showed me 2 different ways to go about making the code 

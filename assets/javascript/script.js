@@ -3,29 +3,8 @@ var generateBtn = document.querySelector("#generate");
 //  stores the generate id  into the var generateBtn
 
 generateBtn.addEventListener("click", writePassword);
-// when the generateBtn is click it needs to run the writePassword function
+// when the var generateBtn is click it needs to run the writePassword function
 
-function writePassword() {
-  var Answer = Questions(); 
-  // depending on whether true or false is returned we can put the stored value into 
-  // another function to give us an each output 
-  var passwordText = document.querySelector("#password");
-  if (Answer) {  
-    // if the stored value is true then the below actions will run
-  var password = generatePassword();
-  //password
-  passwordText.value = password;
-  // password
-
-  }
-  else {
-    passwordText.value = "";
-    // if my value from the questions fuction is false while the alert will pop up it will also clear the text on the screen 
-  }
-
-
-
-}
 var choice = []
 // an array that can be used as a substitute for the other arrays 
 var specialchar = ["!", "@", "#", "$", "%", "^", "&", "*", "?", "(", ")",]
@@ -36,8 +15,24 @@ var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 // different options from which my password can be created
 
-
-
+function writePassword() {
+  var Answer = Questions(); 
+  // depending on whether true or false is returned we can put the stored value into 
+  // another function to give us an output on each 
+  var passwordText = document.querySelector("#password");
+  // this is putting the password id into the varible passwordText so it can be referrenced later 
+  if (Answer) {  
+    // if the stored value is true then the below actions will run
+  var password = generatePassword();
+  // make the varible password equal to whatever the outcome of the generatePassword function is
+  passwordText.value = password;
+  // this replaces the value of the the passwordText with whatever the current value of the password is which comes from the generatePassword function
+  }
+  else {
+    passwordText.value = "";
+    // if my value from the questions fuction is false while the alert will pop up it will also clear the text on the screen 
+  }
+}
 
 function generatePassword() {
   var InvisiblePassword = "";
