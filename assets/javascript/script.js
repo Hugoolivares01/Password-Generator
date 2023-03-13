@@ -16,13 +16,13 @@ function writePassword() {
 
 }
 var characterLength = 8;
-var choiceArr = []
-var specialchararr = ["!", "@", "#", "$", "%", "^", "&", "*", "?", "(", ")",]
-var lowercasearr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
+var choice = []
+var specialchar = ["!", "@", "#", "$", "%", "^", "&", "*", "?", "(", ")",]
+var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
   "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N",
   "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-var numberArr = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 
 
 generateBtn.addEventListener("click", writePassword);
@@ -30,14 +30,27 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
 
 }
-function getPrompts() {
-  characterLength = parseInt(prompt( "ranging from (8 - 128) how many characters do you want for your password?"));
+function Questions() {
+  characterLength = parseInt(prompt("ranging from (8 - 128) how many characters do you want for your password?"));
   if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
     alert("character length must be from (8-128). ");
     return false;
   }
-  if (confirm("Do you want any lowercase letters in your pasword? "))
-  // choiceArr = choiceArr.concat(lowercasearr);
 
-  return password;
+  if (confirm("Do you want any lowercase letters in your pasword? ")) {
+    choice = choice.concat(lowercase);
+  }
+
+  if (confirm("Do you want any uppercase letters in your pasword? ")) {
+    choice = choice.concat(uppercase);
+  }
+
+  if (confirm("Do you want any special characters in your pasword? ")) {
+    choice = choice.concat(specialchar);
+  }
+
+  if (confirm("Do you want any numbers in your pasword? ")) {
+    choice = choice.concat(numbers);
+  }
+  return true;
 }
