@@ -28,7 +28,7 @@ var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-
+  // choice = [];
 }
 function Questions() {
   characterLength = parseInt(prompt("ranging from (8 - 128) how many characters do you want for your password?"));
