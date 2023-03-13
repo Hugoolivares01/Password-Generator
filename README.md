@@ -31,7 +31,7 @@ http://127.0.0.1:5501/index.html
 - Chat gpt (https://chat.openai.com/chat): showed me 2 different ways to go about making the code 
 - https://www.youtube.com/watch?v=iKo9pDKKHnc&t=1131s gave a 3rd option for how to make the password generator 
 - https://www.youtube.com/watch?v=x4HUaiazDes: helped me get a start 
-
+- https://www.youtube.com/watch?v=v2jfGo7ztm8 gave the most help in creating the way the prompts asked
 ## Licenses 
 MIT License
 
