@@ -1,6 +1,11 @@
 # Password-Generator
 
 ## Description 
+- Made this project so that i was able to create a application that could generate me a random code for a password
+- thought this project was done to make a password this could easy be used to generate other random list like putting together colors shapes and sizes 
+- this has ingrained my previous knowledge of javascript from class but i also did learn new things like 
+math.floors, math randoms ,parseint, and isNan
+- while i didnt use them while looking at other ways to do this project i learned about the different ways to use the ! in functions
 
 ## Installation 
 1. To get this project you need to follow this link to open up find the repository for this specific project (https://github.com/Hugoolivares01/Password-Generator)
@@ -9,15 +14,21 @@
 4. clone this project into the folder and you are done.
 
 ## Usage
+http://127.0.0.1:5500/homework/password%20generator/Password-Generator/index.html
 
 ![alt text](assets/images/sh1.png)
+shows the open image of the application 
+
+
 
 ![alt text](assets/images/sh2.png)
-
 ![alt text](assets/images/sh3.png)
+showing some of the possible options for the password
+
 
 
 ![alt text](assets/images/sh4.png)
+just an example of one of the possible end results 
 
 
 ## Credits
@@ -47,9 +58,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## Features 
-
  ## Contribute
  Contributor Covenant Code of Conduct
 Our Pledge
