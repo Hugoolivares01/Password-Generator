@@ -14,7 +14,7 @@ math.floors, math randoms ,parseint, and isNan
 4. clone this project into the folder and you are done.
 
 ## Usage
-http://127.0.0.1:5500/homework/password%20generator/Password-Generator/index.html
+Live Link: https://hugoolivares01.github.io/Password-Generator/
 
 ![alt text](assets/images/sh1.png)
 shows the open image of the application 
